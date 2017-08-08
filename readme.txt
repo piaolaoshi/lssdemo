@@ -1,2 +1,2 @@
 Creating a new branch is quick.
-This a master.
+Creanting a new branch is quick and simple.
