@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cn.hnust.dao.TeacherDao">
+  <resultMap id="BaseResultMap" type="com.cn.hnust.pojo.Teacher">
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="class_t" jdbcType="VARCHAR" property="classT" />
+    <result column="password" property="password" jdbcType="VARCHAR" />
+  </resultMap>
+  <insert id="insertTeacher" parameterType="com.cn.hnust.pojo.Teacher" >
+    insert into teacher (id, name,class_t,password,power)
+    values (#{id}, #{name}, #{classT},#{password},#{power})
+  </insert>
+</mapper>
